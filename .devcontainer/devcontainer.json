@@ -1,4 +1,8 @@
 {
+  // 外层基准
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {}
+  "features": {},
+  "extensions": ["dbaeumer.vscode-eslint"],
+  "mounts": ["source=${localWorkspaceFolder}/outer,target=/outer,type=bind"],
+  "forwardPorts": [3000, 8080]
 }
